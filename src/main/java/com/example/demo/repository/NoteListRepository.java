@@ -31,7 +31,6 @@ public class NoteListRepository {
         }
         temp.setTitle(note.getTitle());
         temp.setContent(note.getContent());
-        //this.notes.set(note.getId(), note);
     }
     public Note getNoteById(Long id) {
         Note note = notes.stream()
