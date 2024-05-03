@@ -1,15 +1,23 @@
 package com.example.demo.data.entity;
 
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "note")
 public class NoteEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column
     private String title;
+    @Column
     private String content;
 
-    public NoteEntity() {
-    }
     public NoteEntity(String title, String content) {
         super();
         this.title = title;
@@ -17,5 +25,10 @@ public class NoteEntity {
     }
     public String getIdToString() {
         return String.valueOf(this.id);
+    }
+
+    @Override
+    public String toString() {
+        return "NoteEntity{"+"id="+id+", title='"+title+'}';
     }
 }
