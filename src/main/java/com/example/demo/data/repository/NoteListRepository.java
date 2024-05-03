@@ -2,11 +2,11 @@ package com.example.demo.data.repository;
 
 import com.example.demo.data.dto.NoteDto;
 import com.example.demo.data.entity.NoteEntity;
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-@Component
+//@Component
 public class NoteListRepository {
     private List<NoteEntity> notes = new ArrayList<>();
     public List<NoteEntity> listAllNotes() {

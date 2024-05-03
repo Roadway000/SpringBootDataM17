@@ -35,3 +35,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### OLD module ###
+ExitController.*
+SumController.*
+TimeController.*
+NoteListRepository.*
+!**src/main/resources/templates/time
+shutdown.html
+summa.html
